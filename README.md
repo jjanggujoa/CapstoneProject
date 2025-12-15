@@ -82,13 +82,9 @@
 모델은 다중 라벨 분류에 적합한 **BCEWithLogitsLoss**를 사용하여 학습되었습니다.
 
 * **주요 평가 지표:** 다중 라벨 분류의 종합 성능 평가를 위해 **Validation F1 (Micro) Score**를 사용했습니다.
+<img width="1392" height="320" alt="에포크 사진" src="https://github.com/user-attachments/assets/d4928027-fdcf-47cf-b2c4-04faed4337b2" />
 
-| Epoch | Train Loss | Validation Accuracy (Subset) | Validation F1 (Micro) |
-| :---: | :---: | :---: | :---: |
-| 1 | X.XXXX | X.XXXX | X.XXXX |
-| 2 | X.XXXX | X.XXXX | X.XXXX |
-| 3 | X.XXXX | X.XXXX | X.XXXX |
-| 4 | X.XXXX | X.XXXX | X.XXXX |
+
 
 * **학습 결과 그래프:**
 
