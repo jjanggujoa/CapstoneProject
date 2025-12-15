@@ -60,41 +60,27 @@
 
 ---
 
-## 4. 탐색적 데이터 분석 (EDA)
+## 4. KOELECTRA 모델 학습 결과
 
-### 4.1. 데이터의 분포 시각화
-* **전체 리뷰 평점 분포:** 긍정/부정 리뷰 비율을 시각화하여 부정 리뷰(3점 이하) 추출의 정당성을 확보했다.
-* **라벨 빈도 분포:** 학습 데이터셋(2,500건) 내에서 각 라벨(A, B, C, D)이 부여된 횟수를 시각화하여 클래스 불균형 정도를 파악했다.
-
-
-### 4.2. 학습 데이터 추출 및 분할 기준
-* **대상:** 평점 3점 이하 부정 리뷰 15,186건
-* **학습셋:** 2,500건 (전체 부정 리뷰의 약 16.5%에 해당)
-* **분할:** 학습(Train) 80% / 검증(Validation) 20%로 분할하여 모델 학습에 사용했다.
-
----
-
-## 5. KOELECTRA 모델 학습 결과
-
-### 5.1. 모델 개요 및 설정
+### 4.1. 모델 개요 및 설정
 * **모델 아키텍처:** KOELECTRA For Sequence Classification
 * **Pre-trained Model:** `monologg/koelectra-base-v3-discriminator`
 * **Batch Size:** 32
 * **Epoch:** 4
 
-### 5.2. 학습 결과 및 평가 지표 
+### 4.2. 학습 결과 및 평가 지표 
 모델은 다중 라벨 분류에 적합한 **BCEWithLogitsLoss**를 사용하여 학습되었으며, **Validation F1 (Micro) Score**를 주요 지표로 평가했다.
 
 <img width="1392" height="320" alt="에포크 사진" src="https://github.com/user-attachments/assets/e7eded86-1d5b-45a6-bc94-d9007967ef8e" />
 
 
 
-### 5.3. 추론 (Inference) 결과
+### 4.3. 추론 (Inference) 결과
 학습 완료된 모델을 사용하여 전체 부정 리뷰(15,186건)에 대해 4가지 카테고리를 예측하고, 그 결과를 `full_negative_reviews_classified.csv` 파일로 저장하여 후속 분석 단계의 기반을 마련했다.
 
 ---
 
-## 6. 최종 결론 도출 
+## 5. 최종 결론 도출 
 
 <img width="800" height="266" alt="불만비율" src="https://github.com/user-attachments/assets/0e461808-9a16-41a2-b286-62d94c205556" />
 
@@ -102,7 +88,7 @@ A. 시설/청결'이(가) 호텔 이용객들이 가장 민감하게 반응하�
 
 ---
 
-## 7. 후기
+## 6. 후기
 
 이번 프로젝트에서는 호텔 리뷰 데이터에 대한 부정리뷰 분석 외에도,모델링(Topic Modeling)을 시도하여 고객의 구체적인 니즈와 불만 사항을 파악하고자 했다. 특히 KoELECTRA 기반의 BERTopic 모델을 사용하여 결론을 도출할 에정이였다.
 
