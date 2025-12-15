@@ -78,6 +78,9 @@
 ### 4.3. 추론 (Inference) 결과
 학습 완료된 모델을 사용하여 전체 부정 리뷰(15,186건)에 대해 4가지 카테고리를 예측하고, 그 결과를 `full_negative_reviews_classified.csv` 파일로 저장하여 후속 분석 단계의 기반을 마련했다.
 
+<img width="2136" height="233" alt="image" src="https://github.com/user-attachments/assets/60556592-11a4-47b1-9bad-2ab151e547b0" />
+
+
 ---
 
 ## 5. 최종 결론 도출 
@@ -85,9 +88,6 @@
 <img width="800" height="266" alt="불만비율" src="https://github.com/user-attachments/assets/0e461808-9a16-41a2-b286-62d94c205556" />
 
 A. 시설/청결'이(가) 호텔 이용객들이 가장 민감하게 반응하는 요소임을 알 수 있다.
-
-
-<img width="2136" height="233" alt="image" src="https://github.com/user-attachments/assets/e3eb4e10-3c07-4230-bb74-8f24354569db" />
 
 
 ---
