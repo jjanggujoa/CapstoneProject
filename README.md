@@ -86,6 +86,10 @@
 
 A. 시설/청결'이(가) 호텔 이용객들이 가장 민감하게 반응하는 요소임을 알 수 있다.
 
+
+<img width="2136" height="233" alt="image" src="https://github.com/user-attachments/assets/e3eb4e10-3c07-4230-bb74-8f24354569db" />
+
+
 ---
 
 ## 6. 후기
